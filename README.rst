@@ -22,31 +22,31 @@ Finally, stretch the secret ``foo`` with the salt ``bar`` using the defaults
     $ stretch foo bar
     FUMV4GHTdgpdEbseRSkUNiTd6CYktCUr3XPqy+pp7cPk7R7Ho0L1JJDXMbcYQkA/gkWQ7BoSOtRcMnvnD8qqhg==
 
-+-----------------------------------+-----------------------------------------+
-| Optional Arguments                | Description                             |
-+===================================+=========================================+
-| ``-h, ``--help``                  | show this help message and exit         |
-+-----------------------------------+-----------------------------------------+
-| ``-b BEGIN``, ``--begin BEGIN``   | define where to start slicing the       |
-|                                   | result (equivalent to ``result[b:]``)   |
-+-----------------------------------+-----------------------------------------+
-| ``-e END``, ``--end END``         | define where to stop slicing the result |
-|                                   | (equivalent to ``result[:e]``)          |
-+-----------------------------------+-----------------------------------------+
-| ``-f``                            | choose a pseudo-random family.          |
-| {``md5``, ``sha1``,               | (Default: ``sha512``)                   |
-| ``sha256``, ``sha512``},          |                                         |
-| ``--family``                      |                                         |
-| {``md5``, ``sha1``,               |                                         |
-| ``sha256``, ``sha512``},          |                                         |
-+-----------------------------------+-----------------------------------------+
-| ``-r ROUNDS``,                    | define the number of rounds to use on   |
-| ``--rounds ROUNDS``               | the generation (an integer greater than |
-|                                   | zero). (Default: ``10000``)             |
-+-----------------------------------+-----------------------------------------+
-| ``-c``, ``--copy``                | copy the output to the clipboard by     |
-|                                   | piping it to xclip instead of printing  |
-+-----------------------------------+-----------------------------------------+
++---------------------------------------+-------------------------------------+
+| Optional Arguments                    | Description                         |
++=======================================+=====================================+
+| ``-h``, ``--help``                    | show this help message and exit     |
++---------------------------------------+-------------------------------------+
+| ``-b BEGIN``, ``--begin BEGIN``       | define where to start slicing the   |
+|                                       | result (equivalent to               |
+|                                       | ``result[b:]``)                     |
++---------------------------------------+-------------------------------------+
+| ``-e END``, ``--end END``             | define where to stop slicing the    |
+|                                       | result (equivalent to               |
+|                                       | ``result[:e]``)                     |
++---------------------------------------+-------------------------------------+
+| ``-f {md5,sha1,sha256,sha512}``,      | choose a pseudo-random family.      |
+| ``--family {md5,sha1,sha256,sha512}`` |                                     |
++---------------------------------------+-------------------------------------+
+| ``-r ROUNDS``,                        | define the number of rounds to use  |
+| ``--rounds ROUNDS``                   | on the generation (an integer       |
+|                                       | greater than zero). (Default:       |
+|                                       | ``10000``)                          |
++---------------------------------------+-------------------------------------+
+| ``-c``, ``--copy``                    | copy the output to the clipboard by |
+|                                       | piping it to xclip instead of       |
+|                                       | printing                            |
++---------------------------------------+-------------------------------------+
 
 .. _`passlib`: https://pythonhosted.org/passlib
 .. _`pbkdf2`: https://pythonhosted.org/passlib/lib/passlib.utils.pbkdf2.html

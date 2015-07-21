@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
     name='stretch',
-    version='1.0',
+    version='1.1',
     description='PBKDF2 on the command line',
     url='https://github.com/felipedau/stretch',
     author='Felipe Dau',
