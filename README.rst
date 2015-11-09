@@ -6,7 +6,7 @@ derive a key, given a secret and a salt.
 
 Installation
 ------------
-You can, of course, clone the repo or download the ``stretch`` script and
+You can, of course, clone the repo or download the ``stretch.py`` script and
 call it from its directory, but I'd rather have it "installed" so it can be
 called from anywhere. The easiest way to install it::
 
@@ -14,7 +14,7 @@ called from anywhere. The easiest way to install it::
 
 Instead, you could just copy the script to a convenient location::
 
-    [sudo] curl https://raw.githubusercontent.com/felipedau/stretch/master/stretch -o /usr/local/bin/stretch
+    [sudo] curl https://raw.githubusercontent.com/felipedau/stretch/master/stretch/stretch.py -o /usr/local/bin/stretch
 
 Finally, stretch the secret ``foo`` with the salt ``bar`` using the defaults
 ``hmac-sha512`` and ``10000`` rounds::

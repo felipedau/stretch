@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
     name='stretch',
-    version='1.1',
+    version='1.2',
     description='PBKDF2 on the command line',
     url='https://github.com/felipedau/stretch',
     author='Felipe Dau',
@@ -19,7 +19,4 @@ setup(
         'Topic :: Security :: Cryptography',
     ],
     keywords='PBKDF2 key derivation function password stretching',
-    scripts=[
-        'stretch',
-    ],
 )
