@@ -1,4 +1,4 @@
-from distutils.core import setup
+from setuptools import setup
 
 import versioneer
 
@@ -23,4 +23,10 @@ setup(
         'Topic :: Security :: Cryptography',
     ],
     keywords='PBKDF2 key derivation function password stretching',
+    packages=['stretch'],
+    entry_points={
+        'console_scripts': [
+            'stretch=stretch.stretch:main',
+        ],
+    },
 )
