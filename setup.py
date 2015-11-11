@@ -1,8 +1,12 @@
 from distutils.core import setup
 
+import versioneer
+
+
 setup(
     name='stretch',
-    version='1.2',
+    version=versioneer.get_version(),
+    cmdclass=versioneer.get_cmdclass(),
     description='PBKDF2 on the command line',
     url='https://github.com/felipedau/stretch',
     author='Felipe Dau',

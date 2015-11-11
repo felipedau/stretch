@@ -25,4 +25,7 @@ __author__ = 'Felipe Dau'
 __contact__ = 'dau.felipe@gmail.com'
 __license__ = 'MIT'
 __url__ = 'https://github.com/felipedau/stretch'
-__version__ = '1.2'
+
+from ._version import get_versions
+__version__ = get_versions()['version']
+del get_versions
